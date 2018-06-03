@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  author: MyString
+  ingredient: MyString
+  step: MyString
+  baking: MyString
+  note: MyText
+
+two:
+  title: MyString
+  author: MyString
+  ingredient: MyString
+  step: MyString
+  baking: MyString
+  note: MyText

@@ -1,0 +1,20 @@
+<h1><%= @recipe.title %></h1>
+
+<ul>
+
+  <li><%= @recipe.ingredient %></li>
+  <li><%= @recipe.step %></li>
+
+  <% if @recipe.baking? %>
+    <li><%= @recipe.baking %></li>
+  <% else %>
+    <li>This meal doesn't need to be baked</li>
+  <% end %>
+
+  <% if @recipe.note? %>
+    <li><%= @recipe.note %></li>
+  <% end %>
+
+</ul>
+
+<%= render 'crud-links' %>

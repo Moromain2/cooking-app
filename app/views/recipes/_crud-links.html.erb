@@ -1,0 +1,6 @@
+<ul>
+  <li><%= link_to 'New', new_recipe_path %></li>
+  <li><%= link_to 'Edit', edit_recipe_path %></li>
+  <li><%= link_to 'Delete', @recipe, method: :delete, data: {confirm: 'Are you sure?' } %></li>
+  <li><%= link_to 'Home', root_path %></li>
+</ul>

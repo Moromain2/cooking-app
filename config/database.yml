@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  username: postgres
+  password: postgres
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: cooking-app_development
+
+
+test:
+  <<: *default
+  database: cooking-app_test
+
+production:
+  <<: *default
+  database: cooking-app_production
+  username: cooking-app
+  password: <%= ENV['COOKING-APP_DATABASE_PASSWORD'] %>
